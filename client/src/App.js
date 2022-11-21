@@ -1,7 +1,6 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
 import {Route, Routes, Link} from 'react-router-dom';
-import getRoute from './functions/getRoute';
 import IntroCarousel from './views/IntroCarousel';
 import LetsIn from './views/LetsIn';
 import SignUp from './views/SignUp';
@@ -11,8 +10,6 @@ import ForgotPassword from './views/ForgotPassword';
 import ForgotPasswordOTP from './views/ForgotPasswordOTP';
 import CreatePassword from './views/CreatePassword';
 import Home from './views/Home';
-// functions
-  getRoute();
 
 const App = () => {
   const userBrowserData = localStorage.getItem('taskManagerUserData');
