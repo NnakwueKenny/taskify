@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import googleLogo from '../images/icons/google.png';
 import appleLogo from '../images/icons/apple-logo.png';
 import facebookLogo from '../images/icons/facebook.png';
-import DatePicker from "react-datepicker";
-
-import "react-datepicker/dist/react-datepicker.css";
 
 const FillProfile = () => {
     const [ email, setEmail ] = useState('');
