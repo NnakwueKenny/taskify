@@ -4,7 +4,7 @@ import BackArrow from '../components/navigations/BackArrow'
 
 const ForgotPasswordOTP = () => {
   return (
-    <div className='flex flex-col justify-between items-center h-full w-full max-w-lg p-3'>
+    <div className='flex flex-col justify-between items-center h-full w-full max-w-lg p-5'>
         <div className='flex justify-start items-center gap-5 w-full text-gray-600'>
             <BackArrow link='/' classes=''/>
             <h1 className='text-3xl'>Forgot Password</h1>

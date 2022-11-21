@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div className=''>
       { /*  Nkewa nke okpokopi bidoro ebea    */ }
-      <main className={`relative flex justify-center w-full h-screen p-3 shadow overflow-auto`}>
+      <main className={`relative flex justify-center w-full h-screen shadow overflow-auto`}>
         {/*overflow-auto scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300*/}
         <Routes>
           {/* Intro Section */}
