@@ -10,16 +10,19 @@ import ForgotPassword from './views/ForgotPassword';
 import ForgotPasswordOTP from './views/ForgotPasswordOTP';
 import CreatePassword from './views/CreatePassword';
 import Home from './views/Home';
+import RecentProjects from './views/RecentProjects';
+import TodayTask from './views/TodayTask';
+import Notifications from './views/Notifications';
+import Search from './views/Search';
 
 const App = () => {
-  const userBrowserData = localStorage.getItem('taskManagerUserData');
-  console.log(userBrowserData)
+  // const userBrowserData = localStorage.getItem('taskManagerUserData');
+  // console.log(userBrowserData);
   
-
   return (
     <div className=''>
       { /*  Nkewa nke okpokopi bidoro ebea    */ }
-      <main className={`relative flex justify-center w-full h-screen shadow overflow-auto`}>
+      <main className={`relative flex justify-center w-full h-screen shadow overflow-auto text-gray-600 dark:text-gray-400 dark:bg-gray-900`}>
         {/*overflow-auto scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300*/}
         <Routes>
           {/* Intro Section */}
@@ -34,6 +37,10 @@ const App = () => {
 
           {/* Main Section */}
           <Route path='/' element={<Home />}/>
+          <Route path='/recent-projects' element={<RecentProjects />}/>
+          <Route path='/today-task' element={<TodayTask />}/>
+          <Route path='/notifications' element={<Notifications />}/>
+          <Route path='/search' element={<Search />}/>
         </Routes>
       </main>
       { /*  Nkewa nke okpokopi kwusiri ebea   */ }
